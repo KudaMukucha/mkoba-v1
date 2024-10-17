@@ -5726,3 +5726,40 @@ input:checked + .radio-value {
 	text-align:center;
 	color:#999;
 }
+
+/* Marquee */
+
+.marquee {
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+  }
+  
+  .marquee-content {
+	display: inline-block;
+	animation: scroll 40s linear infinite;
+  }
+  
+  @keyframes scroll {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(-100%);
+	}
+  }
+  .marquee-content:hover {
+	animation-play-state: paused;
+  }
+  
+ 
+  .edu2_faculty_des {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  @media (max-width: 768px) {
+	.mq {
+	  display: flex;
+	  flex-wrap: nowrap; /* Prevent stacking of columns */
+	}
+}
