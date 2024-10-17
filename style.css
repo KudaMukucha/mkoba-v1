@@ -5729,37 +5729,20 @@ input:checked + .radio-value {
 
 /* Marquee */
 
-.marquee {
-	overflow: hidden;
-	white-space: nowrap;
-	width: 100%;
+
+
+.table {
+    border-collapse: collapse; /* Ensures no space between cells */
+    width: 100%; /* Makes the table responsive */
   }
-  
-  .marquee-content {
-	display: inline-block;
-	animation: scroll 40s linear infinite;
+  .table td {
+    border: none; /* Removes the borders from table cells */
+    padding: 0; /* Optional: removes padding for a cleaner look */
   }
-  
-  @keyframes scroll {
-	0% {
-	  transform: translateX(100%);
-	}
-	100% {
-	  transform: translateX(-100%);
-	}
+  .table tr {
+    border: none; /* Removes borders from table rows */
   }
-  .marquee-content:hover {
-	animation-play-state: paused;
-  }
-  
- 
   .edu2_faculty_des {
-	display: inline-block;
-	margin-right: 20px;
+    margin: 0; /* Remove any margin from the container */
+    padding: 0; /* Remove any padding from the container */
   }
-  @media (max-width: 768px) {
-	.mq {
-	  display: flex;
-	  flex-wrap: nowrap; /* Prevent stacking of columns */
-	}
-}
